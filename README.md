@@ -10,9 +10,9 @@ Features:
 To use this application, follow the steps below:
 
 1. Download and extract the ZIP file to a directory of your choosing. It is important that this folder remains in a static location as the shortcut links require scripts housed in this directory.
-2. Edit the shortcuts.txt file and add new lines in the following format: MAC-Address,IP-Address,Sunshine-Hostname,App-Name
+2. Edit the `shortcuts.txt` file and add new lines in the following format: MAC-Address,IP-Address,Sunshine-Hostname,App-Name
    1. Example: `00-00-00-00-00-00,10.0.0.1,Main-Computer,Desktop` - This will wake the Main-Computer host and start the Desktop Sunshine app.
-3. Run the createShortcut.bat file. This will create the `.\Shortcuts\` directory.
+3. Run the `createShortcut.bat` file. This will create the `.\Shortcuts\` directory.
 4. Navigate to the `.\Shortcuts\` directory and move these shortcuts to a location of your choosing.
 
 Details and Considerations:
