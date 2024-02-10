@@ -1,0 +1,3 @@
+;Enter a new line for each shortcut you wish to generate.
+;Expected Parameters: MAC Address,IP Address,Sunshine Hostname,Application Name
+;Example: 00-00-00-00-00-00,10.10.10.10,Main-Computer,Desktop
