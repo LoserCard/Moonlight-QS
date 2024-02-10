@@ -23,5 +23,6 @@ Details and Considerations:
 * When using different app shortcut links to the same host, you will be prompted to end any existing streams prior to starting a new stream.
 * If your host machine takes too long to wake (>25s), please modify the `MAX_RETRIES` value (default:5) in the `config.txt` file.
 * If you are using Moonlight Portable, please modify the `MOONLIGHT_PATH` in the `config.txt` file.
+* If you decide to move the root Moonlight-QS directory, all pre-existing shortcuts will break. As long as your `shortcuts.txt` contains all of your previous host/app details, you can simply re-run the `createShortcut.bat` file to generate new shortcuts.
 
 Disclaimer: I am not associated or affliated with Moonlight Game Streaming. Any use of intellectual property regarding the base Moonlight application or artwork is strictly used for informative purposes to indicate which application (e.g. Moonlight) is operating in the background.
