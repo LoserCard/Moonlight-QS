@@ -1,5 +1,5 @@
 # Moonlight-QS
-Moonlight-QS is a quick start application extension for Windows that uses a script to dynamically generate shortcut links (.lnk) for one-click Moonlight Game Streaming startup with the host/app of your choosing. This package does NOT contain the base Moonlight Game Streaming application; you can download the Moonlight application here: https://moonlight-stream.org/
+Moonlight-QS is a quick start application for Windows that use several scripts to dynamically generate shortcut links (.lnk) for one-click Moonlight Game Streaming startup with the host/app of your choosing. This package does NOT contain the base Moonlight Game Streaming application; you can download the Moonlight application here: https://moonlight-stream.org/
 
 Features:
 * Wake-On-Lan functionality.
