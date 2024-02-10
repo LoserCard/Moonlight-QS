@@ -6,6 +6,16 @@ if not exist "Shortcuts" (
     mkdir "Shortcuts"
 )
 
+REM Read CREATE_DESKTOP key from config.txt
+set "CREATE_DESKTOP="
+if exist "config.txt" (
+    for /f "usebackq tokens=1,* delims==" %%a in ("config.txt") do (
+        if "%%a"=="CREATE_DESKTOP" (
+            set "CREATE_DESKTOP=%%b"
+        )
+    )
+)
+
 REM Loop through each line in shortcuts.txt
 for /f "usebackq tokens=1-4 delims=," %%a in ("shortcuts.txt") do (
     REM Check if the first token is not a semicolon
@@ -33,6 +43,12 @@ for /f "usebackq tokens=1-4 delims=," %%a in ("shortcuts.txt") do (
             echo Failed to create shortcut: !shortcut_path!
         )
     )
+)
+
+REM Move shortcuts to desktop if CREATE_DESKTOP is set to 1
+if "!CREATE_DESKTOP!"=="1" (
+    echo Moving shortcuts to desktop...
+    move /y "Shortcuts\*.lnk" "%userprofile%\Desktop\"
 )
 
 REM End delayed expansion
