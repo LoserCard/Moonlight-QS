@@ -50,11 +50,16 @@ if errorlevel 1 (
     ) else (
         rem Display a self-expiring message window
         powershell -Command "(New-Object -ComObject WScript.Shell).Popup('The host computer did not respond. Please check the host computer''s network connection and try again.', 10, 'Message', 48)"
+        rem Kill the splash.hta window
+        powershell -Command "Stop-Process -Name mshta -Force -ErrorAction SilentlyContinue -ErrorVariable ProcessNotFound | Where-Object { $_.MainWindowTitle -like 'MoonlightSplash' }"
         exit /b 1
     )
 ) else (
     echo Host computer is now online.
     rem Add further actions here
+
+    rem Kill the splash.hta window
+    powershell -Command "Stop-Process -Name mshta -Force -ErrorAction SilentlyContinue -ErrorVariable ProcessNotFound | Where-Object { $_.MainWindowTitle -like 'MoonlightSplash' }"
 
     rem Run Moonlight Game Streaming
     start "" "%MOONLIGHT_PATH%" stream "%HOST%" "%APP%"

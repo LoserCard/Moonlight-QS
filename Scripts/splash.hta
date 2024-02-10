@@ -14,8 +14,11 @@
             window.resizeTo width, height
             window.moveTo screen.availWidth\2 - width\2, screen.availHeight\2 - height\2
 
-            ' Automatically close the windows after 10 seconds
-            idTimer = window.setTimeout("vbscript:window.close", 10000)
+            ' Set the window title
+            document.title = "MoonlightSplash"
+
+            ' Automatically close the windows after 30 seconds
+            idTimer = window.setTimeout("vbscript:window.close", 30000)
         End Sub
     </script>
 <body style="margin: 0; overflow: hidden;">
