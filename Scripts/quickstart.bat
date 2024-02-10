@@ -57,5 +57,5 @@ if errorlevel 1 (
     rem Add further actions here
 
     rem Run Moonlight Game Streaming
-    start "" "%MOONLIGHT_PATH%" stream %HOST% %APP%
+    start "" "%MOONLIGHT_PATH%" stream "%HOST%" "%APP%"
 )
