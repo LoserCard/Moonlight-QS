@@ -18,3 +18,5 @@ To use this application, follow the steps below:
 Details and Considerations:
 * At this time, Moonlight.exe is ran in the background which means the GUI is not shown. When minimizing your session (L1+R1+Start+Select or CTRL+ALT+SHIFT+Q) you can either run the shortcut again or open the GUI to resume or quit the session.
 * When using different app shortcut links to the same host, you will be prompted to end any existing streams prior to starting a new stream.
+* If your host machine takes too long to wake, please modify the `MAX_RETRIES` value (default:10) in the `config.txt` file.
+* If you are using Moonlight Portable, please modify the `MOONLIGHT_PATH` in the `config.txt` file.
