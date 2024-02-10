@@ -3,6 +3,7 @@ Moonlight-QS is a quick start application for Windows that uses a script to dyna
 
 Features:
 * Wake-On-Lan functionality.
+  * Note: Wake-On-Lan MUST be configured on the host machine beforehand. The built in functionality simply sends a magic packet to the host machine and pings the server to confirm connectivity.
 * Batch shortcut creation.
 * One-Click Moonlight sessions.
 
