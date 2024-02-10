@@ -1,2 +1,3 @@
 MAX_RETRIES=5
 MOONLIGHT_PATH="C:\Program Files\Moonlight Game Streaming\Moonlight.exe"
+CREATE_DESKTOP=0
