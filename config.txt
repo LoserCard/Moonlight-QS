@@ -1,2 +1,2 @@
-MAX_RETRIES=10
+MAX_RETRIES=5
 MOONLIGHT_PATH="C:\Program Files\Moonlight Game Streaming\Moonlight.exe"
