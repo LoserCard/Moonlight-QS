@@ -21,4 +21,4 @@ Details and Considerations:
 * If your host machine takes too long to wake, please modify the `MAX_RETRIES` value (default:10) in the `config.txt` file.
 * If you are using Moonlight Portable, please modify the `MOONLIGHT_PATH` in the `config.txt` file.
 
-Disclaimer: I am not associated or affliated with Moonlight Game Streaming. Any use of intellecual property regarding the base Moonlight application or artwork is strictly used for informative purposes to indicate which application (e.g. Moonlight) is operating in the background.
+Disclaimer: I am not associated or affliated with Moonlight Game Streaming. Any use of intellectual property regarding the base Moonlight application or artwork is strictly used for informative purposes to indicate which application (e.g. Moonlight) is operating in the background.
